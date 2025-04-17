@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+:root{
+  --brand-color:orange;
+}
+
+header{
+  height: 160px;
+  background-color: skyblue;
+  background-image: url(logo.png);
+  background-size: contain;
+}
+
+h1{
+  margin: 0;
+  text-align: center;
+  line-height: 160px;
+}
+
+body{
+  margin: 0;
+}
+
+a{
+  background-color: skyblue;
+  border: 8px solid blue;
+  margin: 0 auto;
+  padding: 8px;
+  display: inline-block;
+}
+
+.container{
+  width: 400px;
+  margin: 32px auto 0;
+  border: 8px solid blue;
+  position: relative;
+}
+
+.box-1{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: absolute;
+}
+
+.box-2{
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  /* position: relative;
+  top: 16px;
+  left: 16px; */
+  position: absolute;
+  /* position: fixed; */
+  top: 20px;
+  left: 20px;
+}
+
+.box-3{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+p{
+  background-color: pink;
+  margin: 0;
+}
+
+img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* 選択した範囲の中で縦横比を変更せずにサイズを大きくしてくれる */
+  object-fit: cover;
+  /* 不透明度 */
+  opacity: .3;
+  /* 画像配置の時の下の余白をなくす */
+  vertical-align: bottom;
+}
+
+list{
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+li{
+  color:var(--brand-color);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom:8px ;
+  width: 320px;
+}

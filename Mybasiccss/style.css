@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+/* 
+p{
+    background-color: pink;
+    /* autoを指定すると左右のスペースが均等になる */
+    /* margin: 0 auto 0 auto;
+    width: 50%;
+    max-width: 400px;
+    height: 160px; */
+    /* border-width: 8px;
+    border-style: solid;
+    border-color: blue; */
+    /* border: 8px solid blue; */
+    /* border: 8px solid blue; */
+    /* padding: 16px; */
+/* } */
+
+body{
+    color: blue;
+}
+
+section{
+    border: 1px solid lightgray;
+    width: 400px;
+    margin: 32px auto 0;
+    border-radius: 8px;
+}
+h1{
+    background-color: skyblue;
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+p{
+    background-color: pink;
+    /* marginの相殺 */
+    margin: 16px;
+    width: 160px;
+    height: 80px;
+    /* box-size内に要素が収まらない際に切り取ったり、スクロールができるようにする */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* 左右、上下、ぼかしの強さ */
+    box-shadow: 8px 8px 20px gray;
+
+}

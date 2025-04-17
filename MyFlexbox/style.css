@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  border: 8px solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border: 8px solid blue;
+  display: flex;
+  height: 240px;
+  /* フレックスボックスの行の向きを反転させる
+  flex-direction: row-reverse; */
+  /* フレックスボックスの行の向きを縦にする
+  flex-direction: column; */
+  /* フレックスボックスの行の向きを縦にして反転させる
+  flex-direction: column-reverse; */
+
+  /* 主軸方向のアイテムの配置 */
+  /* justify-content: space-between; */
+
+  /* 交差軸方向のアイテムの配置 */
+  /* align-items: center; */
+}
+
+.item-1 {
+  width: 80px;
+  height: 80px;
+  background-color: pink;
+  align-self: center;
+  flex: 1;
+}
+
+.item-2 {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+  /* 順番指定 */
+  /* order: 1; */
+  flex: 2;
+}
+
+.item-3 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  margin-left: auto;
+  flex: 3;
+}
+
+
+header{
+  background-color: pink;
+}
+
+.container2{
+  display: flex;
+  height: 92%;
+}
+
+main{
+  background-color: skyblue;
+  flex: 1;
+}
+
+nav{
+  background-color: lightgreen;
+  width: 160px;
+  order: -1;
+}
+
+aside{
+  background-color: orange;
+  width: 160px;
+}
+
+footer{
+  background-color: silver;
+}
+

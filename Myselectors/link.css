@@ -1,0 +1,81 @@
+
+
+h1{
+    background-color: pink;
+}
+
+p{
+    background-color: skyblue;
+}
+
+/* ぜんしょうセレクタ全ての要素に対して変更を加える */
+*{
+    margin: 0;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+}
+
+.box1{
+    background-color: pink;
+}
+
+.box2{
+    background-color: skyblue;
+}
+
+.box3{
+    background-color: orange;
+}
+
+#circle1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+/* 複合セレクタ */
+div.box.box1{
+    background-color: red;
+}
+
+/* h1またはpのセレクタ(セレクタリスト) */
+/* h1,
+p{
+    background-color: pink;
+} */
+
+/* 子結合 */
+section > p{
+    color: red;
+}
+
+/* 子孫結合 */
+section p{
+    background-color: yellow;
+}
+
+/* 2個目の要素の前の要素が指定した要素の時だけ反映 */
+li + li{
+    border-top: 1px solid blue;
+}
+
+/* 同じ要素が並んでいて3番目のみを赤くする */
+:nth-child(3){
+    color: red;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+input:focus{
+    border: 8px solid red;
+}
+
+button:active{
+    background-color: blue;
+}

@@ -1,0 +1,68 @@
+ /* 画面幅の小さい順に記述していく
+body{
+    background-color: pink;
+}
+
+ width>=600px 
+@media(min-width: 600px){
+    body{
+        background-color: skyblue;
+    }
+}
+
+@media(min-width: 800px){
+    body{
+        background-color: orange;
+    }
+} */
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: pink;
+}
+
+header,
+main,
+nav,
+aside,
+footer{
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: skyblue;
+}
+
+nav{
+    background-color: orange;
+}
+
+aside{
+    background-color: yellow;
+}
+
+footer{
+    background-color: green;
+}
+
+@media (min-width: 600px){
+    .container{
+        display: flex
+    }
+
+    nav{
+        width: 160px;
+    };
+
+    main{
+        flex: 1;
+    }
+
+    aside{
+        display: none;
+    }
+}
