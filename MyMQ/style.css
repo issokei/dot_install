@@ -43,6 +43,7 @@ nav{
 
 aside{
     background-color: yellow;
+    display: none;
 }
 
 footer{
@@ -63,6 +64,6 @@ footer{
     }
 
     aside{
-        display: none;
+        display: block;
     }
 }

@@ -1,0 +1,78 @@
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out; */
+
+    /* 二つの動きをつけたい場合 */
+    /* transition: transform 1s , border-radius 1s; */
+
+    /* 初めがduration、2番目がdelay */
+    /* transition: transform 1s ease-in-out 1s; */
+
+    /* transformの起点を左上に変更 */
+    /* transform-origin: top left; */
+
+    animation-name: move-around;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    /* 逆再生 */
+    animation-direction: alternate;
+}
+
+.box:hover{
+    /* 要素の中心を起点にしている */
+    /* 縦横に移動
+    transform:translate(100px, 100px);
+    /* 横に移動 */
+    /* transform: translateX(300px); 
+    border-radius: 50%; */
+    /* 回転 */
+    /* transform: rotate(45deg); */
+
+    /* 変形の組み合わせ */
+    /* transform: rotate(45deg) translate(100px); */
+
+
+}
+
+@keyframes move-around{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(300px, 0px);
+        border-radius: 0;
+    }
+    50%{
+        transform: translate(300px, 300px);
+        border-radius: 50%;
+    }
+    75%{
+        transform: translate(0px, 300px);
+        border-radius: 0;
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+button{
+    all: unset;
+    border: black solid 1px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+    transition: background-color 0.5s;
+}
