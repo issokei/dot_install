@@ -74,5 +74,54 @@ button:hover{
     background-color: black;
     color: white;
     border: white solid 1px;
-    transition: background-color 0.5s;
+    transition: background-color 1s;
+}
+
+.loading{
+    width: 80px;
+    height: 80px;
+    border-top:8px solid red;
+    border-left:8px solid blue;
+    border-bottom:8px solid yellow;
+    border-right:8px solid green;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.message{
+    width: 300px;
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    animation: popup 2s forwards;
+}
+
+@keyframes popup{
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+    80%{
+        transform: translateY(-10%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
 }
